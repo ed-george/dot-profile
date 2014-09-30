@@ -94,3 +94,9 @@ function fuck() {
     echo
   fi
 }
+
+#Upload to transfer.sh
+#See http://transfer.sh for more info
+transfer() { 
+    curl --upload-file ./$1 https://transfer.sh/$1;
+}
