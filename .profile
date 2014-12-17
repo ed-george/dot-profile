@@ -83,6 +83,9 @@ function mcd()
 #Paste to internet
 alias pst="curl -F 'sprunge=<-' http://sprunge.us"
 
+#Generate .gitignore files using gi <platform or language> or gi list - see https://www.gitignore.io/docs
+function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}
+
 #Kill a program!
 #See: https://gist.github.com/namuol/9122237
 function fuck() {
