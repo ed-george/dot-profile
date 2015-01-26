@@ -77,7 +77,7 @@ alias lb="find /"
 #Make directory and move into it
 function mcd()
 {
-  test -e $1 || mkdir $1; cd $1;
+  test -e "$1" || mkdir "$1"; cd "$1";
 }
 
 #Paste to internet
