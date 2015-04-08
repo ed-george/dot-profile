@@ -74,6 +74,9 @@ alias ds="dirs -v"
 #LOOK BUSY!
 alias lb="find /"
 
+#Get local IP
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+
 #Make directory and move into it
 function mcd()
 {
