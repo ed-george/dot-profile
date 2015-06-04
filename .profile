@@ -22,7 +22,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 #Get file sizes for current dir
-alias fsize='du -sch *'
+#Requires coreutils 7.5+ - can access on OSX via Homebrew  
+#Use sort instead of gsort if non-OSX
+alias fsize='du -hs * | gsort -h'
+#Alternative:
+#alias fsize='du -sch *'
 
 #Add more to default ls
 alias ls='ls -lGh'
