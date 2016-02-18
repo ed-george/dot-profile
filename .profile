@@ -139,3 +139,5 @@ function ss(){
 	done
 }
 
+#Local weather report from wttr.in
+alias weather='curl -4 http://wttr\.in/'
